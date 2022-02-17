@@ -1,5 +1,7 @@
 import React from 'react'
 import Aux from '../../Auxillary/Auxillary';
+import Toolbar from '../Navigation/Toolbar/Toolbar';
+import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 
 
 
@@ -10,11 +12,10 @@ const style = {
 
 }
 const layout=(props)=>(
+    
     <Aux>
-        <div>
-            Toolbar, SideDrawer, Backdrop
-     
-        </div>
+       <Toolbar/>
+       <SideDrawer />
         <main style = {style}>
             {props.children}
         </main>
